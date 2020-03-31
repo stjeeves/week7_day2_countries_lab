@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
 
             findCountry: function () {
-                // return this.countries.find(user input)
+                return this.countries.find(index)
     
             }
         },

@@ -9,16 +9,16 @@
 <body>
     <div id="app">
         <h1>FACTS ABOUT THE WORLD!!!</h1>
-        {{ totalPopulation }}
+        <p>The total population is {{ totalPopulation }}. WOOOOOOOOOW!</p>
         <!-- <p v-if="countries" :src="countries"> {{ countries }}</p> -->
+        <div class="list">
+            <select  name="countries-list">
+                <option v-for="(country, index) in countries" value="{{index}}">{{country.name}}</option>
+            </select>
+            <input type="submit" value="Select Country" v-for="findCountry(index)">
+        </div>
     </div>
-    <div>
-        <select v-for="(country, index) in countries" name="country_list" id="country_list">
-        <option value={{country.name}} ></option>
-         </select>
-        <input type="submit" value="Select Country">
 
-    </div>
     
 
 </body>
