@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="./js/bundle.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>FACTS ABOUT THE WORLD!!!</h1>
+        {{ totalPopulation }}
+        <!-- <p v-if="countries" :src="countries"> {{ countries }}</p> -->
+    </div>
+    <div>
+        <select name="country_list" id="country_list" v-for="(country, index) in countries"></select>
+        <option value= "country.name" ></option>
+        <input type="submit" value="Select Country">
+    </div>
+    
+
+</body>
+</html>
