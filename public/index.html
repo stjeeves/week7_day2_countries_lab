@@ -13,9 +13,11 @@
         <!-- <p v-if="countries" :src="countries"> {{ countries }}</p> -->
     </div>
     <div>
-        <select name="country_list" id="country_list" v-for="(country, index) in countries"></select>
-        <option value= "country.name" ></option>
+        <select v-for="(country, index) in countries" name="country_list" id="country_list">
+        <option value={{country.name}} ></option>
+         </select>
         <input type="submit" value="Select Country">
+
     </div>
     
 
